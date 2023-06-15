@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nathan Lesny Track and Field Form</title>
+	  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    
+    <link rel="stylesheet" href="styles.css">
+    <h1 id="title">Track and Field Form</h1>
+    <p id="description">Thank you for taking the time to help improve the sport</p>
+    <form id="survey-form">
+        <fieldset>
+        <label id="name-label" class="textable">Name 
+            <input id="name" type="text" name="name" required placeholder="Enter your name"/>
+        </label>
+        <label id="email-label" class="textable">Email 
+            <input id="email" type="email" name="email'" required placeholder="Enter your Email"/>
+        </label>
+        <label id="number-label" class="textable"> Age (optional) 
+            <input id="number" type="number" name="age" placeholder="Age" min="13" max="120">
+        </label>
+        <label id="select-label">What is your current status as an athlete?
+            <select name="role-select" id="dropdown">
+                <option value="">Select current role</option>
+                <option value="1">Middle School</option>
+                <option value="2">High School</option>
+                <option value="3">College</option>
+                <option value="4">Coach</option>
+                <option value="5">Other</option>
+            </select>
+        </label>
+        <label id="radio-sheet">Would you recommend Track and Field to a Friend?
+            <label><input type="radio" value="1" name="abs-may-no" /> Absolutely</label>
+            <label><input type="radio" value="2" name="abs-may-no" /> Maybe</label>
+            <label><input type="radio" value="3" name="abs-may-no" class="no" /> Definitely Not</label>
+        </label>
+        <label id="mcq">What would you like to see improved in the sport? (check all that apply)
+            <label><input value="1" type="checkbox"> Less running</label>
+            <label><input value="2" type="checkbox"> Less tiring</label>
+            <label><input value="3" type="checkbox"> More fun</label>
+            <label><input value="4" type="checkbox"> Less fun</label>
+        </label>
+        </fieldset>
+        <fieldset>
+            <label>Any Comments or suggestions?
+                <textarea name="suggestions" rows="6" cols="30" placeholder="Enter your comment here..."></textarea>
+            </label>
+            <input type="submit" id="submit" value="Submit" />
+        </fieldset>
+    </form>
+</body>
+</html>
